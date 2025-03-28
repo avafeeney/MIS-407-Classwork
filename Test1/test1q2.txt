@@ -1,0 +1,12 @@
+Last login: Fri Sep  1 11:10:39 on ttys000
+(base) avafeeney@afeeney ~ % cd mis407/mis407f23-student-04/
+(base) avafeeney@afeeney mis407f23-student-04 % ls
+Test1
+(base) avafeeney@afeeney mis407f23-student-04 % cd Test1
+(base) avafeeney@afeeney Test1 % ls
+Test1q1.py	Test1q1.txt
+(base) avafeeney@afeeney Test1 % git pull
+Already up to date.
+(base) avafeeney@afeeney Test1 % git branch
+* main
+(base) avafeeney@afeeney Test1 %

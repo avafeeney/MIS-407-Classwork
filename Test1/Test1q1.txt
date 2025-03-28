@@ -1,0 +1,17 @@
+(base) avafeeney@afeeney ~ % cd MIS407
+(base) avafeeney@afeeney MIS407 % ls
+mis407f23-student-04
+(base) avafeeney@afeeney MIS407 % cd mis407f23-student-04
+(base) avafeeney@afeeney mis407f23-student-04 % ls
+(base) avafeeney@afeeney mis407f23-student-04 % git remote -v
+origin	https://github.com/mis407f23/mis407f23-student-04.git (fetch)
+origin	https://github.com/mis407f23/mis407f23-student-04.git (push)
+(base) avafeeney@afeeney mis407f23-student-04 % git pull
+Already up to date.
+(base) avafeeney@afeeney mis407f23-student-04 % mkdir Test1
+(base) avafeeney@afeeney Test1 % echo "print('Your interest earned this year on 500 dollar investment at 4%:', 500 * 0.04)" >> Test1q1.py
+(base) avafeeney@afeeney Test1 % cat Test1q1.py
+print('Your interest earned this year on 500 dollar investment at 4%:', 500 * 0.04)
+(base) avafeeney@afeeney Test1 % python Test1q1.py
+Your interest earned this year on 500 dollar investment at 4%: 20.0
+(base) avafeeney@afeeney Test1 %

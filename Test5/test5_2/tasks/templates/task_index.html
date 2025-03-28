@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<h1>Tasks</h1>
+<a href="{% url 'task:create'%}" class="btn btn-primary">New Task</a>
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Priority</th>
+              <th scope="col">Done</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+                <tr>
+                    <td><a href="{% url 'task:detail' task.pk %}">{{ task.title }}</a>
+                    </td>
+                    <td>{{ task.priority }}</td>
+                    <td>{{ task.done }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

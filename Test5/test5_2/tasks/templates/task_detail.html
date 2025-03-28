@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h1>{{ task.title }}</h1>
+<a href="{% url 'task:update' task.pk %}" class="btn btn-primary">Edit Task</a>
+<a href="{% url 'task:delete' task.pk %}" class="btn btn-primary">Delete Task</a>
+<div class="row">
+    <div class="col-md-4">
+        <h5>Priority:</h5>
+        <p>{{ task.priority }}</p>
+        <h5>Done:</h5>
+        <p>{{ task.done }}</p>
+        <h5>Description:</h5>
+        <p>{{ task.desc }}</p>
+    </div>
+</div>
+
+{% endblock %}
